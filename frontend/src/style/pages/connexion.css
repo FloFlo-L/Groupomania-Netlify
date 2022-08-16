@@ -1,0 +1,115 @@
+/*****CONNEXION******/
+.connexionPage {
+  margin: 0px 0px;
+  color: #4e5166;
+}
+
+.connexionContainer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.containerConnexion {
+  border: none;
+  background: #ffd7d7;
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.activeBtn {
+  border-bottom: 2px solid #fd2d01;
+  font-weight: 500;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  width: 100%;
+  object-fit: contain;
+}
+
+/*input + label*/
+.input-field label {
+  color: black;
+}
+.input-field input:focus + label {
+  color: #4e5166 !important;
+}
+.input-field input:focus {
+  border-bottom: 1px solid #fd2d01 !important;
+  box-shadow: 0 1px 0 0 #fd2d01 !important;
+}
+
+/* bouton connexion/inscription */
+.btnConnexion {
+  background-color: #fd2d01 !important;
+  border-radius: 20px;
+}
+
+.btnConnexion:hover {
+  background-color: #fd2d01;
+  opacity: 0.8;
+}
+
+/*erreurs et message inscription*/
+.error-nom,
+.error-prenom,
+.error-email,
+.error-password,
+.error {
+  color: red;
+  font-weight: 600;
+  font-size: smaller;
+}
+
+.message-inscription {
+  color: green;
+  font-weight: 600;
+  font-size: smaller;
+}
+
+/*responsive tablette*/
+@media only screen and (max-width: 850px) {
+  .connexionPage {
+    margin: 0px 0px;
+  }
+  .connexionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .containerConnexion {
+    width: 80%;
+  }
+  .imgContainer {
+    width: 75%;
+  }
+}
+/*responsive mobile*/
+@media only screen and (max-width: 600px) {
+  .connexionPage {
+    margin: 0px 0px;
+  }
+  .connexionContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .containerConnexion {
+    width: 90%;
+  }
+  .imgContainer {
+    width: 65%;
+  }
+}
