@@ -39,10 +39,10 @@ export default function AddPost() {
       method: 'POST',
       body: formData,
     };
-    fetch(`https://flofloflogroupomaniaapp.herokuapp.com/api/post/`, requestNewPost).then((res) =>
-      console.log(res)
+    fetch(`https://flofloflogroupomaniaapp.herokuapp.com/api/post/`, requestNewPost)
+    .then((res) =>console.log(res)
     );
-    // window.location = '/';
+    window.location = '/';
   }
 
   /*Affficher Image - Fichier sélectionné + BDD*/
