@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SignIn from './signIn';
+import SignIn from './SignIn';
 
 export default function SignUp() {
   const [nom, setNom] = useState('');
@@ -65,7 +65,7 @@ export default function SignUp() {
       .then((response) => response.json())
       .then((response2) => {
         console.log(response2.message);
-        if (response2.message === '') {
+        if (response2.message === 'Vous êtes inscrit !') {
           setFormSubmit(true);
           console.log('inscrit !');
         } else {
