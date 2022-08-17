@@ -42,7 +42,7 @@ export default function AddPost() {
     fetch(`https://flofloflogroupomaniaapp.herokuapp.com/api/post/`, requestNewPost).then((res) =>
       console.log(res)
     );
-    window.location = '/';
+    // window.location = '/';
   }
 
   /*Affficher Image - Fichier sélectionné + BDD*/
