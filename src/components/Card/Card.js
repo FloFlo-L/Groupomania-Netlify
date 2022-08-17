@@ -13,7 +13,6 @@ import { UserIdContext } from '../../context/AppContext';
 
 export default function Card({ post }) {
   const userId = useContext(UserIdContext);
-  console.log('letestTODAY',userId)
 
   const [isLoading, setIsLoading] = useState(true);
   const [message, setMessage] = useState(post.message);

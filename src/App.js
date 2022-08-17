@@ -12,11 +12,9 @@ function App() {
     if (token === null) {
       console.log('No token, no userId');
     } else {
-      console.log(token);
       const decodeToken = jwtdecode(token);
       const userToken = decodeToken.userId;
       setUserId(userToken);
-      console.log('userId:', userToken);
     }
   }, [userId]);
 
